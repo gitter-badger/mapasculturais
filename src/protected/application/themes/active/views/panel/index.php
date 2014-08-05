@@ -66,70 +66,70 @@
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
         <div class="atividade clearfix">
 			<p>
 				<span class="small">Em 00/00/00 - 00:00</span><br/>
 				<a href="#">Fulano</a> adicionou o evento <a href="#">Mussum Ipsun</a> em seu espaço <a href="#">Teatro Pindureta</a>".
 			</p>
-            <div><a class="action" href="#">aceitar</a> <a class="action" href="#">rejeitar</a></div>
+            <div><a class="button  button--small  button--positive" href="#">aceitar</a> <a class="button  button--small  button--negative" href="#">rejeitar</a></div>
         </div>
     </section>
 </div>

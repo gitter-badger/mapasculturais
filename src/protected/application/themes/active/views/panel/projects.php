@@ -1,8 +1,8 @@
 <?php $this->part('panel/part-nav.php')?>
 <div class="lista-sem-thumb main-content">
 	<header class="header-do-painel clearfix">
-		<h2 class="alignleft">Meus projetos</h2>
-		<a class="botao adicionar" href="<?php echo $app->createUrl('project', 'create') ?>">Adicionar novo projeto</a>
+		<h2 class="alignleft">Meus Projetos</h2>
+		<a class="button  button--positive" href="<?php echo $app->createUrl('project', 'create') ?>">Adicionar Projeto</a>
 	</header>
     <ul class="abas clearfix clear">
         <li class="active"><a href="#ativos">Ativos</a></li>

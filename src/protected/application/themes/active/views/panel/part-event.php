@@ -9,12 +9,12 @@
                 <?php endif; ?>
 	</div>
     <div>
-        <a class="action" href="<?php echo $entity->editUrl; ?>">editar</a>
+        <a class="button  button--small  action" href="<?php echo $entity->editUrl; ?>">editar</a>
 
         <?php if($entity->status === \MapasCulturais\Entities\Event::STATUS_ENABLED): ?>
-            <a class="action" href="<?php echo $entity->deleteUrl; ?>">excluir</a>
+            <a class="button  button--small  button--negative  action" href="<?php echo $entity->deleteUrl; ?>">excluir</a>
         <?php else: ?>
-            <a class="action" href="<?php echo $entity->undeleteUrl; ?>">recuperar</a>
+            <a class="button  button--small  button--positive  action" href="<?php echo $entity->undeleteUrl; ?>">recuperar</a>
         <?php endif; ?>
     </div>
 </article>

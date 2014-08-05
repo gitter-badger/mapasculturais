@@ -1,8 +1,8 @@
 <?php $this->part('panel/part-nav.php')?>
 <div class="lista-sem-thumb main-content">
 	<header class="header-do-painel clearfix">
-		<h2 class="alignleft">Meus eventos</h2>
-		<a class="botao adicionar" href="<?php echo $app->createUrl('event', 'create'); ?>">Adicionar novo evento</a>
+		<h2 class="alignleft">Meus Eventos</h2>
+		<a class="button  button--positive" href="<?php echo $app->createUrl('event', 'create'); ?>">Adicionar Evento</a>
 	</header>
     <ul class="abas clearfix clear">
         <li class="active"><a href="#ativos">Ativos</a></li>
