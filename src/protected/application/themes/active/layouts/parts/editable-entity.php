@@ -58,10 +58,10 @@ if(is_editable()){
                 </div>
             <?php endif; ?>
             <!-- se estiver na página de edição e logado mostrar:-->
+            <a id="submitButton" class="button  button--positive" data-legend="Salvar" data-legend-submitted="salvo">Salvar</a>
             <?php if ($this->controller->action !== 'create'): ?>
-                <a href="<?php echo $this->controller->createUrl('single', array($entity->id)) ?>" class="botao principal">Sair do modo de edição</a>
+                <a href="<?php echo $this->controller->createUrl('single', array($entity->id)) ?>" class="button  button--negative">Cancelar</a>
             <?php endif; ?>
-            <a id="submitButton" class="botao principal" data-legend="Salvar" data-legend-submitted="salvo">Salvar</a>
         </div>
     <?php elseif ($entity->canUser('modify')): ?>
         <script type="text/javascript">
@@ -69,12 +69,12 @@ if(is_editable()){
         </script>
         <div class="controles">
             <!-- se estiver na página comum e logado mostrar:-->
-            <a href="<?php echo $entity->editUrl ?>" class="botao principal">Editar</a>
+            <a href="<?php echo $entity->editUrl ?>" class="button">Editar</a>
 
             <?php if ($entity->canUser('remove') && $entity->status > 0): ?>
-                <a href="<?php echo $entity->deleteUrl ?>" class="botao selected">Excluir</a>
+                <a href="<?php echo $entity->deleteUrl ?>" class="button  button--negative">Excluir</a>
             <?php elseif ($entity->canUser('undelete') && $entity->status < 0): ?>
-                <a href="<?php echo $entity->undeleteUrl ?>" class="botao selected">Recuperar</a>
+                <a href="<?php echo $entity->undeleteUrl ?>" class="button  button--positive">Recuperar</a>
             <?php endif; ?>
         </div>
     <?php endif; ?>

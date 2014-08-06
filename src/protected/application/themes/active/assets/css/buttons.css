@@ -54,23 +54,23 @@
  * 11. Prevents from inheriting default anchor styles.
  */
 .button {
-    display:inline-block;       /* [1] */
-    vertical-align:middle;      /* [2] */
-    white-space:nowrap;         /* [3] */
-    font-family:inherit;        /* [4] */
-    font-size:100%;             /* [4] */
-    cursor:pointer;             /* [5] */
-    border:none;                /* [6] */
-    margin:0;                   /* [6] */
-    padding-top:   0;           /* [6] */
-    padding-bottom:0;           /* [6] */
-    line-height:3;              /* [7] */
-    height:     3rem;            /* [7] */
-    padding-right:1em;          /* [7] */
-    padding-left: 1em;          /* [7] */
-    background-color:#292724;   /* [8] */
-    border-radius:2px;          /* [8] */
-    overflow:visible;           /* [9] */
+    background-color: #292724;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .875rem;
+    font-family: inherit;
+    height: 1.5rem;
+    line-height: 1.714;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: .5em;
+    padding-left: .5em;
+    overflow: visible;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .button,
@@ -103,20 +103,12 @@
     $SIZES
 \*------------------------------------*/
 
-.button--small {
-    font-size: .875rem;
-    height: 1.5rem;
-    line-height: 1.714;
-    padding-right: .5em;
-    padding-left: .5em;
-}
-
 .button--large {
-    font-size: 1.125rem;
-    height: 4.5rem;
-    line-height: 4;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 3;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .button--huge {
@@ -138,8 +130,6 @@
     font-size: inherit;
     height: auto;
     line-height: inherit;
-    padding-right: .5em;
-    padding-left: .5em;
     vertical-align: baseline;
 }
 

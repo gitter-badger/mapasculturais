@@ -53,14 +53,14 @@ add_occurrence_frequencies_to_js();
         <!-- .mapa -->
         <?php if(is_editable()): ?>
             <div class="clear">
-                <a class="editar botao js-open-dialog hltip"
+                <a class="button  js-open-dialog  hltip"
                    data-dialog="#dialog-event-occurrence"
                    data-dialog-callback="MapasCulturais.eventOccurrenceUpdateDialog"
                    data-dialog-title="Modificar Ocorrência"
                    data-form-action="edit"
                    data-item="{{serialized}}"
-                   href="#" title='Editar Ocorrência'>editar</a>
-               <a class='excluir botao js-event-occurrence-item-delete js-remove-item hltip' style="vertical-align:middle" data-href="{{deleteUrl}}" data-target="#event-occurrence-{{id}}" data-confirm-message="Excluir esta Ocorrência?" title='Excluir Ocorrência'>excluir</a>
+                   href="#" title='Editar Ocorrência'>Editar</a>
+               <a class='button  button--negative  js-event-occurrence-item-delete  js-remove-item  hltip' style="vertical-align:middle" data-href="{{deleteUrl}}" data-target="#event-occurrence-{{id}}" data-confirm-message="Excluir esta Ocorrência?" title='Excluir Ocorrência'>Excluir</a>
             </div>
         <?php endif; ?>
     </div>
@@ -127,7 +127,7 @@ add_occurrence_frequencies_to_js();
             <?php endif; ?>
             >
                 <?php if (is_editable()): ?>
-                <a class="botao editar js-open-editbox" data-target="#editbox-change-header" href="#">editar</a>
+                <a class="button  js-open-editbox" data-target="#editbox-change-header" href="#">Editar</a>
                 <div id="editbox-change-header" class="js-editbox mc-bottom" title="Editar Imagem da Capa">
                     <?php add_ajax_uploader($entity, 'header', 'background-image', '.js-imagem-do-header', '', 'header'); ?>
                 </div>
@@ -143,7 +143,7 @@ add_occurrence_frequencies_to_js();
                     <img class="js-avatar-img" src="<?php echo $app->assetUrl ?>/img/avatar--event.png" />
                 <?php endif; ?>
                 <?php if (is_editable()): ?>
-                    <a class="botao editar js-open-editbox" data-target="#editbox-change-avatar" href="#">editar</a>
+                    <a class="button  js-open-editbox" data-target="#editbox-change-avatar" href="#">Editar</a>
                     <div id="editbox-change-avatar" class="js-editbox mc-right" title="Editar avatar">
                         <?php add_ajax_uploader($entity, 'avatar', 'image-src', 'div.avatar img.js-avatar-img', '', 'avatarBig'); ?>
                     </div>
@@ -346,11 +346,11 @@ add_occurrence_frequencies_to_js();
             <!--.servico.ocorrencia-->
             <?php if(is_editable()): ?>
                 <div class="textright">
-                    <a class="botao adicionar js-open-dialog hltip" data-dialog="#dialog-event-occurrence" href="#"
+                    <a class="button  js-open-dialog  hltip" data-dialog="#dialog-event-occurrence" href="#"
                        data-dialog-callback="MapasCulturais.eventOccurrenceUpdateDialog"
                        data-dialog-title="Adicionar Ocorrência"
                        data-form-action='insert'
-                       title="Clique para adicionar ocorrências">
+                       title="Clique para adicionar Ocorrências">
                         Adicionar Ocorrência
                     </a>
                 </div>

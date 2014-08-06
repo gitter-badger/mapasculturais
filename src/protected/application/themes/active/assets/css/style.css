@@ -628,13 +628,13 @@ body.editable #main-section { margin-top: 136px; }
 .barra-esquerda { width: 15%; }
 .barra-direita { width: 25%; }
 .barra-lateral.evento { border-top: #b3b921 12px solid; }
-.barra-lateral.evento a, .barra-lateral.evento .compartilhamentos { color: #b3b921; }
+.barra-lateral.evento .compartilhamentos { color: #b3b921; }
 .barra-lateral.evento .setinha { border-color: #b3b921 transparent transparent transparent; }
 .barra-lateral.agente { border-top: #1dabc6 12px solid; }
 .barra-lateral.agente a, .barra-lateral.agente .compartilhamentos { color: #1dabc6 }
 .barra-lateral.agente .setinha { border-color: #1dabc6 transparent transparent transparent; }
 .barra-lateral.espaco { border-top: #e83f96 12px solid; }
-.barra-lateral.espaco a, .barra-lateral.espaco .compartilhamentos { color: #e83f96; }
+.barra-lateral.espaco .compartilhamentos { color: #e83f96; }
 .barra-lateral.espaco .setinha { border-color: #e83f96 transparent transparent transparent; }
 .barra-lateral.projeto { border-top: #cc0033 12px solid; }
 .barra-lateral.projeto a, .barra-lateral.projeto .compartilhamentos { color: #cc0033; }
@@ -686,12 +686,24 @@ table.contratos td { font-size: .75rem; }
 .main-content { float: left; width: 60%; box-sizing: border-box; -moz-box-sizing: border-box; margin-bottom: 4rem; padding: 4rem; background: #fff; border-radius: 0 0 2px 2px; }
 .main-content-header { margin-bottom: 4rem; }
 .imagem-do-header { position: relative; height: 12rem; margin: -4rem -4rem 4rem; background-color: #ccc; background-position: center; background-repeat: no-repeat; background-size: cover; }
-.imagem-do-header .botao.editar { position: absolute; bottom: 1.5rem; right: 1.5rem; }
+.imagem-do-header .botao.editar, 
+.imagem-do-header .button { 
+    position: absolute; 
+    right: 1.5rem; 
+    bottom: 1.5rem; 
+}
 .com-imagem .botao.editar { display: none; }
 .com-imagem:hover .botao.editar { display: block; }
 .content-do-header { position: relative; min-height: 9rem; padding-left: 10.5rem; }
 .content-do-header .avatar { position: absolute; left: 0; width: 9rem; height: 9rem; margin: 0; }
-.content-do-header .avatar .botao.editar { position: absolute; right: .75rem; bottom: .75rem; }
+
+.content-do-header .avatar .botao.editar, 
+.content-do-header .avatar .button { 
+    position: absolute; 
+    right: .75rem; 
+    bottom: .75rem; 
+}
+
 .imagem { width: 60%; height: 20rem; margin-bottom: 1.5rem; background: #ccc; }
 .ficha-spcultura { margin-bottom: 1.5rem; padding: 1.5rem; background: #f8f8f8; border-radius: 2px; font-size: .875rem; color: #888; }
 .servico { margin-bottom: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #ddd; }
@@ -847,8 +859,6 @@ div.ficha-spcultura .editable-buttons-bottom { float: left; }
 .js-videogallery li .botoes-de-edicao { top: .7rem; right: .7rem; }
 .js-videogallery li:hover .botoes-de-edicao { display: block; }
 .js-metalist-item-display { display: block; cursor: pointer; }
-.js-remove-item { color: #666; }
-.js-remove-item:hover { color: #333; }
 .js-remove-item:before { width: 1rem; height: 1rem; }
 .js-videogallery .thumbnail_med_wide { width: 150px; height: 84px; }
 
