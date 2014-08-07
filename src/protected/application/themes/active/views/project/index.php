@@ -30,13 +30,13 @@
     <form id="form-agente" class="filtro">
         <label for="nome-do-agente">Agente</label>
         <input class="autocomplete" name="nome-do-agente" type="text" placeholder="Agente" />
-        <a class="botao principal" href="#">Listar agentes</a>
+        <a class="button" href="#">Listar agentes</a>
     </form>
     <!-- #form-projeto-->
     <form id="form-espaco" class="filtro">
         <label for="nome-do-espaco">Espaço</label>
         <input class="autocomplete" name="nome-do-espaco" type="text" placeholder="Espaço" />
-        <a class="botao principal" href="#">Listar espaços</a>
+        <a class="button" href="#">Listar espaços</a>
     </form>
     <!-- #form-projeto-->
 </div>
@@ -70,7 +70,7 @@
 <header id="header-dos-projetos" class="header-do-objeto clearfix">
     <div class="clearfix">
         <h1><span class="icone icon_document_alt"></span> Projetos</h1>
-        <a class="botao adicionar" href="#">Adicionar projeto</a>
+        <a class="button" href="#">Adicionar projeto</a>
         <a class="icone arrow_carrot-down" href="#"></a>
     </div>
 </header>

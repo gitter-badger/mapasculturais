@@ -431,7 +431,7 @@ add_occurrence_frequencies_to_js();
         <div class="mensagem alerta">
             Aparentemente o espaço procurado ainda não se encontra registrado em nosso sistema. Tente uma nova busca ou antes de continuar, adicione um novo espaço clicando no botão abaixo.
         </div>
-        <a class="botao adicionar" href="#">adicionar espaço</a>-->
+        <a class="button" href="#">Adicionar espaço</a>-->
         <div class="clearfix">
             <div class="grupo-de-campos">
                 <label for="horario-de-inicio">Horário inicial:</label><br>
@@ -495,7 +495,7 @@ add_occurrence_frequencies_to_js();
                 <p class="form-help">Você pode inserir uma descrição própria ou inserir a descrição gerada automaticamente clicando no botão ao lado.</p>
                 <div class="grupo-descricao-automatica clearfix">
                     <p id="descricao-automatica" class="mensagem automatica">Descrição gerada pelo sistema automaticamente.</p>
-                    <a class="botao simples inserir"></a>
+                    <a class="button"></a>
                 </div>
                 <input type="text" name="description" value="{{rule.description}}">
             </div>

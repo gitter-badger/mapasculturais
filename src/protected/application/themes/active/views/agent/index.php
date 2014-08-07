@@ -5,7 +5,7 @@
 <div id="lista">
 <header id="header-dos-agentes" class="header-do-objeto clearfix">
 	<h1><span class="icone icon_profile"></span> Agentes</h1>
-	<a class="botao adicionar" href="#">Adicionar agente</a>
+	<a class="button" href="#">Adicionar agente</a>
 	<a class="icone arrow_carrot-down" href="#"></a>
 </header>
 <div class="lista">

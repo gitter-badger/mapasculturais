@@ -37,6 +37,6 @@ $app->enqueueScript('vendor', 'jquery-ui-datepicker-pt-BR', '/vendor/jquery-ui.d
 
     <img src="<?php $this->asset('img/spinner-black.gif') ?>" class="spinner" />
     <!-- OCULTADO POR ENQUANTO BOTÃO DE CADSTRAR EVENTO
-    <a class="botao adicionar alignright" href="#">adicionar evento</a>
+    <a class="button  alignright" href="#">adicionar evento</a>
     -->
 </header>

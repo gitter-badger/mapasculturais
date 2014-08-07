@@ -50,7 +50,7 @@ add_entity_properties_metadata_to_js($entity);
             <?php endif; ?>
         >
             <?php if(is_editable()): ?>
-                <a class="botao editar js-open-editbox" data-target="#editbox-change-header" href="#">editar</a>
+                <a class="button  js-open-editbox" data-target="#editbox-change-header" href="#">Editar</a>
                 <div id="editbox-change-header" class="js-editbox mc-bottom" title="Editar Imagem da Capa">
                     <?php add_ajax_uploader ($entity, 'header', 'background-image', '.js-imagem-do-header', '', 'header'); ?>
                 </div>
@@ -66,7 +66,7 @@ add_entity_properties_metadata_to_js($entity);
                         <img class="js-avatar-img" src="<?php echo $app->assetUrl ?>/img/avatar--project.png" />
             <?php endif; ?>
                 <?php if(is_editable()): ?>
-                    <a class="botao editar js-open-editbox" data-target="#editbox-change-avatar" href="#">editar</a>
+                    <a class="button  js-open-editbox" data-target="#editbox-change-avatar" href="#">Editar</a>
                     <div id="editbox-change-avatar" class="js-editbox mc-right" title="Editar avatar">
                         <?php add_ajax_uploader ($entity, 'avatar', 'image-src', 'div.avatar img.js-avatar-img', '', 'avatarBig'); ?>
                     </div>
@@ -191,9 +191,9 @@ add_entity_properties_metadata_to_js($entity);
             <?php endif; ?>
             <p class="js-ficha-inscricao">
                 <?php if($registrationForm): ?>
-                    <a href="<?php echo $registrationForm->url?>" class="botao principal"><span class="icone icon_download"></span>Baixar a ficha de inscrição</a>
+                    <a href="<?php echo $registrationForm->url?>" class="button"><span class="icone icon_download"></span>Baixar a ficha de inscrição</a>
                     <?php if(is_editable()): ?>
-                        <a class='botao excluir simples js-remove-item' data-href='<?php echo $registrationForm->deleteUrl ?>' data-target=".js-ficha-inscricao>*" data-remove-callback="$('#upload-registration-button').removeClass('oculto');" data-confirm-message="Excluir a ficha de inscrição?">Excluir a ficha de inscrição</a>
+                        <a class='button  button--negative  js-remove-item' data-href='<?php echo $registrationForm->deleteUrl ?>' data-target=".js-ficha-inscricao>*" data-remove-callback="$('#upload-registration-button').removeClass('oculto');" data-confirm-message="Excluir a ficha de inscrição?">Excluir a ficha de inscrição</a>
                     <?php endif; ?>
                 <?php endif; ?>
             </p>
@@ -201,16 +201,16 @@ add_entity_properties_metadata_to_js($entity);
         
         <?php if($this->controller->action == 'edit'): ?>
             <p id="upload-registration-button" <?php if($registrationForm): ?>class="oculto"<?php endif; ?>>
-                <a class="botao adicionar simples js-open-editbox" data-target="#editbox-upload-registration-form">Subir uma ficha de inscrição</a>
+                <a class="button  js-open-editbox" data-target="#editbox-upload-registration-form">Subir uma ficha de inscrição</a>
             </p>
             <div id="editbox-upload-registration-form" class="js-editbox mc-right" title="Subir ficha de inscrição" data-success-callback="$('#upload-registration-button').addClass('oculto');">
                 <?php add_ajax_uploader ($entity, 'registrationForm', 'set-content', '.js-ficha-inscricao',''
-                        . '<a href="{{url}}" class="botao principal"><span class="icone icon_download"></span>Baixar a ficha de inscrição</a> '
-                        . '<a class="botao excluir simples js-remove-item" data-href="{{deleteUrl}}" data-target=".js-ficha-inscricao>*" data-remove-callback="$(\'#upload-registration-button\').removeClass(\'oculto\');" data-confirm-message="Excluir a ficha de inscrição?">Excluir a ficha de inscrição</a>','',false,'.doc, .xls, .pdf'); ?>
+                        . '<a href="{{url}}" class="button"><span class="icone icon_download"></span>Baixar a ficha de inscrição</a> '
+                        . '<a class="button  button--negative  js-remove-item" data-href="{{deleteUrl}}" data-target=".js-ficha-inscricao>*" data-remove-callback="$(\'#upload-registration-button\').removeClass(\'oculto\');" data-confirm-message="Excluir a ficha de inscrição?">Excluir a ficha de inscrição</a>','',false,'.doc, .xls, .pdf'); ?>
             </div>
         <?php endif; ?>
         <?php if($app->auth->isUserAuthenticated() && $entity->isRegistrationOpen() && !is_editable()): ?>
-            <p><a class="botao principal js-open-dialog" data-dialog="#dialog-registration-form" href="#">Fazer inscrição</a></p>
+            <p><a class="button  js-open-dialog" data-dialog="#dialog-registration-form" href="#">Fazer inscrição</a></p>
 
             <div id="dialog-registration-form" class="js-dialog" title="Inscrição">
                 <form class="js-ajax-upload" method="POST" data-action="project-registration" action="<?php echo $app->createUrl('project', 'register', array($entity->id)); ?>" enctype="multipart/form-data">
@@ -242,7 +242,7 @@ add_entity_properties_metadata_to_js($entity);
         <div id="inscritos" class="privado lista-sem-thumb">
             <div class="clearfix">
                 <h3 class="alignleft"><span class="icone icon_lock"></span>Inscritos</h3>
-                <a class="alignright botao download" href="#"><span class="icone icon_download"></span>Baixar a Lista de Inscritos</a>
+                <a class="alignright button download" href="#"><span class="icone icon_download"></span>Baixar a Lista de Inscritos</a>
             </div>
             <div class="js-registration-list">
                 <?php foreach($entity->registrations as $registration): ?>
@@ -253,9 +253,9 @@ add_entity_properties_metadata_to_js($entity);
                         <div><span class="label">Tipo:</span> <?php echo $registration->agent->type->name ?></div>
                     </div>
                     <div>
-                        <a href="#" class="js-registration-action action botao <?php if($registration->status == Registration::STATUS_ENABLED) echo 'selected' ?>" data-agent-id="<?php echo $registration->agent->id ?>" data-href="<?php echo $app->createUrl('project', 'approveRegistration', array($entity->id)) ?>">aprovar</a>
-                        <a href="#" class="js-registration-action action botao <?php if($registration->status == Registration::STATUS_REGISTRATION_REJECTED) echo 'selected' ?>" data-agent-id="<?php echo $registration->agent->id ?>" data-href="<?php echo $app->createUrl('project', 'rejectRegistration', array($entity->id)) ?>">rejeitar</a>
-                        <?php if($form = $registration->getFile('registrationForm')): ?><a class="action" href="<?php echo $form->url ?>">baixar ficha</a><?php endif; ?>
+                        <a href="#" class="js-registration-action action button  button--positive <?php if($registration->status == Registration::STATUS_ENABLED) echo 'selected' ?>" data-agent-id="<?php echo $registration->agent->id ?>" data-href="<?php echo $app->createUrl('project', 'approveRegistration', array($entity->id)) ?>">Aprovar</a>
+                        <a href="#" class="js-registration-action action button  button--negative <?php if($registration->status == Registration::STATUS_REGISTRATION_REJECTED) echo 'selected' ?>" data-agent-id="<?php echo $registration->agent->id ?>" data-href="<?php echo $app->createUrl('project', 'rejectRegistration', array($entity->id)) ?>">Rejeitar</a>
+                        <?php if($form = $registration->getFile('registrationForm')): ?><a class="button" href="<?php echo $form->url ?>">Baixar ficha</a><?php endif; ?>
                     </div>
                 </article>
                 <!--.objeto-->
@@ -288,7 +288,7 @@ add_entity_properties_metadata_to_js($entity);
             <?php endif; ?>
 
             <?php if($entity->id && $entity->canUser('createChield')): ?>
-            <a class="botao adicionar staging-hidden" href="<?php echo $app->createUrl('project','create', array('parentId' => $entity->id)) ?>">adicionar sub-projeto</a>
+            <a class="button  staging-hidden" href="<?php echo $app->createUrl('project','create', array('parentId' => $entity->id)) ?>">Adicionar sub-projeto</a>
             <?php endif; ?>
         </div>
     <?php endif; ?>

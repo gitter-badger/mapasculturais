@@ -6,7 +6,7 @@
 <div id="lista">
 <header id="header-dos-eventos" class="header-do-objeto clearfix">
 	<h1><span class="icone icon_calendar"></span> Eventos</h1>
-	<a class="botao adicionar" href="#">Adicionar evento</a>
+	<a class="button" href="#">Adicionar evento</a>
 	<a class="icone arrow_carrot-down" href="#"></a>
 </header>
 <div class="lista">

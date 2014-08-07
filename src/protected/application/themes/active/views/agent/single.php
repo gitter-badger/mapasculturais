@@ -34,7 +34,7 @@ add_angular_entity_assets($entity);
             <?php endif; ?>
         >
         <?php if(is_editable()): ?>
-            <a class="botao editar js-open-editbox" data-target="#editbox-change-header" href="#">editar</a>
+            <a class="button  js-open-editbox" data-target="#editbox-change-header" href="#">Editar</a>
             <div id="editbox-change-header" class="js-editbox mc-bottom" title="Editar Imagem da Capa">
                 <?php add_ajax_uploader ($entity, 'header', 'background-image', '.js-imagem-do-header', '', 'header'); ?>
             </div>
@@ -50,7 +50,7 @@ add_angular_entity_assets($entity);
                         <img class="js-avatar-img" src="<?php echo $app->assetUrl ?>/img/avatar--agent.png" />
             <?php endif; ?>
                 <?php if(is_editable()): ?>
-                    <a class="botao editar js-open-editbox" data-target="#editbox-change-avatar" href="#">editar</a>
+                    <a class="button  js-open-editbox" data-target="#editbox-change-avatar" href="#">Editar</a>
                     <div id="editbox-change-avatar" class="js-editbox mc-right" title="Editar avatar">
                         <?php add_ajax_uploader ($entity, 'avatar', 'image-src', 'div.avatar img.js-avatar-img', '', 'avatarBig'); ?>
                     </div>

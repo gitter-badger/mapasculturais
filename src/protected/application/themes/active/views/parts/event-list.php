@@ -1,5 +1,5 @@
-<a class="botao adicionar" href="<?php echo $app->createUrl('event', 'create')?>">
-adicionar evento</a>
+<a class="button" href="<?php echo $app->createUrl('event', 'create')?>">
+Adicionar Evento</a>
 <?php foreach($events as $event): ?>
 
     <article class="objeto evento clearfix">
