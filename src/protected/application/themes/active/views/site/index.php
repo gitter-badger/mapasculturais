@@ -104,9 +104,6 @@ $url_search_events = $app->createUrl('site', 'search')."##(global:(enabled:(even
 $url_search_projects = $app->createUrl('site', 'search')."##(global:(filterEntity:project,viewMode:list))";
 
 ?>
-<section id="capa-marca-dagua">
-
-</section>
 <section id="capa-intro" class="js-page-menu-item objeto-capa clearfix fundo-laranja">
     <div class="box">
         <h1>Bem-vind@!</h1>

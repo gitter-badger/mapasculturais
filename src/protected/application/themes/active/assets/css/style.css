@@ -1707,7 +1707,7 @@ h6 {
 }
 
 #nav-eventos {
-  background: #b3b921;
+  background: #0073cf;
 }
 
 #nav-agentes {
@@ -1833,11 +1833,11 @@ h6 {
 }
 
 #capa-eventos {
-  background: #b3b921;
+  background: #0073cf;
 }
 
 #capa-eventos .abas li.active {
-  border-bottom-color: #b3b921;
+  border-bottom-color: #0073cf;
 }
 
 #capa-agentes {
